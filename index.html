@@ -40,13 +40,15 @@
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button btn-primary">Заказать услугу</button>
+                <button type="button" class="hero-button btn-primary" data-modal-open>Заказать услугу</button>
             </div>
         </section>
-        <div class="backdrop is-hidden">
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="" aria-label="Закрыть">
-                    
+                <button class="btn-close" aria-label="Закрыть" data-modal-close>
+                    <svg class="close-icon">
+                        <use href="images/icons.svg#icon-close"></use>
+                    </svg>
                 </button>        
             </div>
         </div>
@@ -126,28 +128,29 @@
                             <p lang="en" class="profession">Product Designer</p>
                             <ul class="social-list list">
                                 <li class="social-item">
-                                    <a href="" class="team-social-link social-link link">
+                                    <a href="https://Instagram.com" class="team-social-link social-link link"
+                                    target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                         <svg class="social-icon">
-                                            <use href="./images/icons.svg#instagram-icon" aria-label="Instagram">                                   
+                                            <use href="./images/icons.svg#instagram-icon">                                   
                                             </use>
                                         </svg>
                                     </a></li>
                                 <li class="social-item">
-                                    <a href="" class="team-social-link social-link link" aria-label="Twitter">
+                                    <a href="https://Twitter.com" class="team-social-link social-link link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                         <svg class="social-icon">
                                             <use href="./images/icons.svg#twitter-icon">
                                             </use>
                                         </svg>
                                     </a></li>
                                 <li class="social-item">
-                                    <a href="" class="team-social-link social-link link" aria-label="Facebook">
+                                    <a href="https://Facebook.com" class="team-social-link social-link link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                         <svg class="social-icon">
                                             <use href="./images/icons.svg#facebook-icon">
                                             </use>
                                         </svg>
                                     </a></li>
                                 <li class="social-item">
-                                    <a href="" class="team-social-link social-link link" aria-label="LinkedIn">
+                                    <a href="https://Linkedin.com" class="team-social-link social-link link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                         <svg class="social-icon">
                                             <use href="./images/icons.svg#linkedin-icon">
                                             </use>
@@ -383,5 +386,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
